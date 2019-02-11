@@ -1,0 +1,43 @@
+{
+    "name": "opcoding/active-azure-directory",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.2.0",
+        "knpuniversity/oauth2-client-bundle": "^1.25",
+        "symfony/yaml": "4.2.*",
+        "thenetworg/oauth2-azure": "^1.4",
+        "doctrine/orm": "^2.6",
+        "symfony/security": "^4.2",
+        "doctrine/doctrine-bundle": "^1.10",
+        "symfony/security-bundle": "^4.2",
+        "symfony/validator": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpcoAADBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "replace": {
+        "paragonie/random_compat": "2.*",
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php56": "*"
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "4.2.*"
+        }
+    }
+}

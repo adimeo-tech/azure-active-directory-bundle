@@ -1,0 +1,10 @@
+services:
+    OpcoAADBundle\Security\AzureAuthenticator:
+        class: OpcoAADBundle\Security\AzureAuthenticator
+        arguments:
+            - '@KnpU\OAuth2ClientBundle\Client\ClientRegistry'
+            - '@doctrine.orm.entity_manager'
+
+    OpcoAADBundle\Controller\:
+        resource: '../../Controller'
+        tags: ['controller.service_arguments']

@@ -1,0 +1,3 @@
+opco_aad_bundle_controllers:
+    resource: ../../Controller/
+    type: annotation
