@@ -9,8 +9,6 @@
         "thenetworg/oauth2-azure": "^1.4",
         "doctrine/orm": "^2.6",
         "symfony/security": "^4.2",
-        "doctrine/doctrine-bundle": "^1.10",
-        "symfony/security-bundle": "^4.2",
         "symfony/validator": "^4.2"
     },
     "autoload": {

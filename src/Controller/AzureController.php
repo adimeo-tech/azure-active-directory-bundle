@@ -42,8 +42,8 @@ class AzureController extends AbstractController
                 'status' => false,
                 'message' => 'User not found!'
             ]);
-        } else {
-            return $this->redirectToRoute('homepage');
         }
+
+        return $this->redirectToRoute('homepage');
     }
 }
