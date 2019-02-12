@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * Class OpcodingAADBundle
  *
- * @package OpcoAADBundle
+ * @package OpcodingAADBundle
  */
 class OpcodingAADBundle extends Bundle
 {

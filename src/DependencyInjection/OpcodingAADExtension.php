@@ -7,11 +7,11 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * Class OpcoAADExtension
+ * Class OpcodingAADExtension
  *
  * @package OpcodingAADBundle\DependencyInjection
  */
-class OpcoAADExtension extends Extension
+class OpcodingAADExtension extends Extension
 {
     /**
      * @inheritdoc
