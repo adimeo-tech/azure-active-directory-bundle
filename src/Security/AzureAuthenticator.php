@@ -1,8 +1,8 @@
 <?php
-namespace OpcoAADBundle\Security;
+namespace OpcodingAADBundle\Security;
 
 use Doctrine\ORM\EntityManagerInterface;
-use OpcoAADBundle\Entity\User;
+use OpcodingAADBundle\Entity\User;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
 use KnpU\OAuth2ClientBundle\Security\Authenticator\SocialAuthenticator;
 use Symfony\Component\HttpFoundation\RedirectResponse;

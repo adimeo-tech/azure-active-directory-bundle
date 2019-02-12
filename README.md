@@ -15,7 +15,7 @@ Edit the bundles.php file and add the following code :
 <?php
 return [
     KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle::class => ['all' => true],
-		\OpcoAADBundle\OpcoAADBundle::class => ['all' => true]
+		\OpcodingAADBundle\OpcoAADBundle::class => ['all' => true]
 ];
 ```
 
@@ -33,10 +33,9 @@ knpu_oauth2_client:
 ```
 
 
-Then edit the config/packages/security.yml and add the following code : 
+Then edit the `config/packages/security.yml` and add the following code : 
 
 ```yaml
-
 providers:
         app:
             entity:
@@ -54,7 +53,6 @@ providers:
                 target: /
             guard:
                 authenticators:
-                    - OpcoAADBundle\Security\AzureAuthenticator
-
+                    - OpcodingAADBundle\Security\AzureAuthenticator
 ```
 

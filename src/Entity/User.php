@@ -1,5 +1,5 @@
 <?php
-namespace OpcoAADBundle\Entity;
+namespace OpcodingAADBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;

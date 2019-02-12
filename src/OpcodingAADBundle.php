@@ -1,13 +1,13 @@
 <?php
-namespace OpcoAADBundle;
+namespace OpcodingAADBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class OpcoAADBundle
+ * Class OpcodingAADBundle
  *
  * @package OpcoAADBundle
  */
-class OpcoAADBundle extends Bundle
+class OpcodingAADBundle extends Bundle
 {
 }

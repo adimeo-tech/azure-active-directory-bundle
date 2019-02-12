@@ -1,5 +1,5 @@
 {
-    "name": "opcoding/active-azure-directory",
+    "name": "opcoding/aad",
     "type": "project",
     "license": "proprietary",
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OpcoAADBundle\\": "src/"
+            "OpcodingAADBundle\\": "src/"
         }
     }
 }

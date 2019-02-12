@@ -1,5 +1,5 @@
 <?php
-namespace OpcoAADBundle\Controller;
+namespace OpcodingAADBundle\Controller;
 
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
