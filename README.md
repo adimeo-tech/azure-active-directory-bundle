@@ -6,7 +6,7 @@ Active azure directory bundle for symfony 4 project
 Add the following code in the your `config/routes.yaml`
 
 ```yaml
-opco_aad_bundle:
+opcoding_aad_bundle:
     resource: '@OpcodingAADBundle/Resources/config/routes.yaml'
 ```
 
