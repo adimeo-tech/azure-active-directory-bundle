@@ -7,7 +7,7 @@ Add the following code in the your `config/routes.yaml`
 
 ```yaml
 opco_aad_bundle:
-    resource: '@OpcoAADBundle/Resources/config/routes.yaml'
+    resource: '@OpcodingAADBundle/Resources/config/routes.yaml'
 ```
 
 Edit the bundles.php file and add the following code : 
@@ -15,11 +15,11 @@ Edit the bundles.php file and add the following code :
 <?php
 return [
     KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle::class => ['all' => true],
-		\OpcodingAADBundle\OpcoAADBundle::class => ['all' => true]
+		\OpcodingAADBundle\OpcodingAADBundle::class => ['all' => true]
 ];
 ```
 
-Create a new yaml config with this : 
+Edit de `knpu_oauth2_client.yml` file and add the following code : 
 ```yaml
 knpu_oauth2_client:
     clients:
@@ -39,7 +39,7 @@ Then edit the `config/packages/security.yml` and add the following code :
 providers:
         app:
             entity:
-                class: OpcoAADBundle:User
+                class: OpcodingAADBundle:User
                 property: username
     firewalls:
         dev:
