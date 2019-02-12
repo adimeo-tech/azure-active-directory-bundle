@@ -1,5 +1,5 @@
 {
-    "name": "opcoding/aad",
+    "name": "opcoding/azure-active-directory",
     "type": "project",
     "license": "proprietary",
     "require": {
