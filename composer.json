@@ -7,9 +7,9 @@
         "knpuniversity/oauth2-client-bundle": "^1.25",
         "symfony/yaml": "4.2.*",
         "thenetworg/oauth2-azure": "^1.4",
-        "doctrine/orm": "^2.6",
-        "symfony/security": "^4.2",
-        "symfony/validator": "^4.2"
+        "symfony/validator": "^4.2",
+        "symfony/security-bundle": "^4.2",
+        "doctrine/orm": "^2.6"
     },
     "autoload": {
         "psr-4": {
