@@ -14,12 +14,11 @@ Edit the bundles.php file and add the following code :
 ```php
 <?php
 return [
-    KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle::class => ['all' => true],
-		\OpcodingAADBundle\OpcodingAADBundle::class => ['all' => true]
+    OpcodingAADBundle\OpcodingAADBundle::class => ['all' => true]
 ];
 ```
 
-Edit de `knpu_oauth2_client.yml` file and add the following code : 
+Edit de `config/packages/knpu_oauth2_client.yml` file and add the following code : 
 ```yaml
 knpu_oauth2_client:
     clients:
@@ -33,10 +32,11 @@ knpu_oauth2_client:
 ```
 
 
-Then edit the `config/packages/security.yml` and add the following code : 
+Then edit the `config/packages/security.yml` and add the following code according to your needs: 
 
 ```yaml
-providers:
+security:
+    providers:
         app:
             entity:
                 class: OpcodingAADBundle:User
@@ -56,3 +56,22 @@ providers:
                     - OpcodingAADBundle\Security\AzureAuthenticator
 ```
 
+For example, if your application request that all the users must be logged in you can configure it like that :
+
+
+```yaml
+security:
+    firewalls:
+        main:
+            pattern: ^/
+            anonymous: true
+            logout:
+                path: app_logout
+                target: /
+            guard:
+                authenticators:
+                    - OpcodingAADBundle\Security\AzureAuthenticator
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, role: ROLE_USER }
+```

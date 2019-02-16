@@ -44,6 +44,6 @@ class AzureController extends AbstractController
             ]);
         }
 
-        return $this->redirectToRoute('homepage');
+        return $this->redirect('/');
     }
 }
