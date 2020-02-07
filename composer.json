@@ -5,10 +5,10 @@
     "require": {
         "php": "^7.2.0",
         "knpuniversity/oauth2-client-bundle": "^1.25",
-        "symfony/yaml": "4.2.*",
+        "symfony/yaml": "4.*",
         "thenetworg/oauth2-azure": "^1.4",
-        "symfony/validator": "^4.2",
-        "symfony/security-bundle": "^4.2",
+        "symfony/validator": "4.*",
+        "symfony/security-bundle": "4.*",
         "doctrine/orm": "^2.6"
     },
     "autoload": {
